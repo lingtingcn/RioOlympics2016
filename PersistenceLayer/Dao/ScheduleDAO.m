@@ -50,7 +50,7 @@ static ScheduleDAO *sharedSingleton = nil;
 // 删除Events方法
 - (int)remove:(Schedule *)model {
     if ([self openDB]) {
-        NSString *sql = @"DELETE FROM Schedule WHERE EventID = ?";
+        NSString *sql = @"DELETE FROM Schedule WHERE scheduleID = ?";
         sqlite3_stmt *statement;
         if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil) == SQLITE_OK) {
             sqlite3_bind_int(statement, 1, model.event.EventID);
@@ -101,7 +101,10 @@ static ScheduleDAO *sharedSingleton = nil;
                 schedule.gameTime = [[NSString alloc] initWithUTF8String:cGameTime];
                 const char *cGameInfo = (char *)sqlite3_column_text(statement, 3);
                 schedule.gameInfo = [[NSString alloc] initWithUTF8String:cGameInfo];
-                schedule.event.EventID = sqlite3_column_int(statement, 4);
+                Events *event = [[Events alloc] init];
+                event.EventID = sqlite3_column_int(statement, 4);
+                schedule.event = event;
+//                NSLog(@"schedule数据：%@", schedule);
                 [listData addObject:schedule];
             }
             sqlite3_finalize(statement);
@@ -129,7 +132,9 @@ static ScheduleDAO *sharedSingleton = nil;
                 schedule.gameTime = [[NSString alloc] initWithUTF8String:cGameTime];
                 const char *cGameInfo = (char *)sqlite3_column_text(statement, 2);
                 schedule.gameInfo = [[NSString alloc] initWithUTF8String:cGameInfo];
-                schedule.event.EventID = sqlite3_column_int(statement, 3);
+                Events *event = [[Events alloc] init];
+                event.EventID = sqlite3_column_int(statement, 3);
+                schedule.event = event;
                 sqlite3_finalize(statement);
                 sqlite3_close(db);
                 return schedule;

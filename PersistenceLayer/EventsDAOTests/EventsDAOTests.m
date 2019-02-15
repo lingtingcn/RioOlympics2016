@@ -68,6 +68,7 @@
 - (void)test_3_FindAll {
     NSArray *list = [self.dao findAll];
     NSLog(@"list的总数:%ld", [list count]);
+    
     // 断言查询记录数为41
     XCTAssertEqual([list count], 41);
     Events *resEvent = list[40];
@@ -81,6 +82,7 @@
     for (Events *e in list) {
         NSLog(@"%d-%@", e.EventID, e.EventName);
     }
+    
 }
 
 // 测试修改Events的方法
@@ -103,6 +105,7 @@
 
 // 测试删除方法
 - (void)test_5_Remove {
+    self.theEvents.EventID = 41;
     int res = [self.dao remove:self.theEvents];
     // 断言无异常，返回值为0
     XCTAssertEqual(res, 0);

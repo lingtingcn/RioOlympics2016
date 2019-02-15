@@ -29,10 +29,10 @@
     self.theSchedule.gameDate = @"test GameDate";
     self.theSchedule.gameTime = @"test GameTime";
     self.theSchedule.gameInfo = @"test GameInfo";
-    Schedule *schedule = [[Schedule alloc] init];
-    schedule.scheduleID = 1;
     Events *event = [[Events alloc] init];
+    event.EventID = 1;
     self.theSchedule.event = event;
+//    self.continueAfterFailure = NO; // 当出错后是否继续向下执行
 }
 
 - (void)tearDown {
@@ -53,6 +53,10 @@
 - (void)test_2_FindById {
     self.theSchedule.scheduleID = 502;
     Schedule *resSchedule = [self.dao findById:self.theSchedule];
+    NSLog(@"数据1：%@", resSchedule.gameDate);
+    NSLog(@"数据2：%@", resSchedule.gameTime);
+    NSLog(@"数据3：%@", resSchedule.gameInfo);
+    NSLog(@"数据4：%d", resSchedule.event.EventID);
     // 断言查询结果非nil
     XCTAssertNotNil(resSchedule, @"查询记录为空");
     // 断言
@@ -66,7 +70,8 @@
 - (void)test_3_FindAll {
     NSArray *list = [self.dao findAll];
     NSLog(@"list的总数:%ld", [list count]);
-    // 断言查询记录数为41
+    
+    // 断言查询记录数为501
     XCTAssertEqual([list count], 502);
     Schedule *resSchedule = list[501];
     // 断言
@@ -76,13 +81,13 @@
     XCTAssertEqual(self.theSchedule.event.EventID, resSchedule.event.EventID);
     
     for (Schedule *s in list) {
-        NSLog(@"%d-%@", s.scheduleID, s.gameInfo);
+        NSLog(@"%d-%@-%d", s.scheduleID, s.gameInfo, s.event.EventID);
     }
 }
 
 // 测试修改Events的方法
 - (void)test_4_Modify {
-    self.theSchedule.scheduleID = 501;
+    self.theSchedule.scheduleID = 502;
     self.theSchedule.gameInfo = @"test modify GameInfo";
     int res = [self.dao modify:self.theSchedule];
     // 断言无异常，返回值为0
@@ -99,7 +104,7 @@
 
 // 测试删除方法
 - (void)test_5_Remove {
-//    self.theSchedule.scheduleID = 503;
+    self.theSchedule.scheduleID = 502;
     int res = [self.dao remove:self.theSchedule];
     // 断言无异常，返回值为0
     XCTAssertEqual(res, 0);

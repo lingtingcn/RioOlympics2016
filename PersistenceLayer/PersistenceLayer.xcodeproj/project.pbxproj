@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D9A8C2F221393F9003F60B7 /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9A8C2D221393F9003F60B7 /* EventsDAO.h */; };
+		9D9A8C2F221393F9003F60B7 /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9A8C2D221393F9003F60B7 /* EventsDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D9A8C30221393F9003F60B7 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A8C2E221393F9003F60B7 /* EventsDAO.m */; };
-		9D9A8C42221401E8003F60B7 /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9A8C40221401E8003F60B7 /* ScheduleDAO.h */; };
+		9D9A8C42221401E8003F60B7 /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9A8C40221401E8003F60B7 /* ScheduleDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D9A8C43221401E8003F60B7 /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A8C41221401E8003F60B7 /* ScheduleDAO.m */; };
 		9D9A8C4B22142389003F60B7 /* ScheduleDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A8C4A22142389003F60B7 /* ScheduleDAOTests.m */; };
 		9D9A8C4D22142389003F60B7 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB9BA72212F1F200389FEB /* PersistenceLayer.framework */; };
@@ -17,15 +17,15 @@
 		9DFB9BEC2212F6E500389FEB /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB9BEA2212F6E500389FEB /* create_load.sql */; };
 		9DFB9BED2212F6E500389FEB /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB9BEB2212F6E500389FEB /* DBConfig.plist */; };
 		9DFB9BF02212F74A00389FEB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB9BEF2212F74A00389FEB /* libsqlite3.tbd */; };
-		9DFB9BF52212F7FD00389FEB /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9BF32212F7FD00389FEB /* Events.h */; };
+		9DFB9BF52212F7FD00389FEB /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9BF32212F7FD00389FEB /* Events.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DFB9BF62212F7FD00389FEB /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9BF42212F7FD00389FEB /* Events.m */; };
-		9DFB9BF92212FA1400389FEB /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9BF72212FA1400389FEB /* Schedule.h */; };
+		9DFB9BF92212FA1400389FEB /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9BF72212FA1400389FEB /* Schedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DFB9BFA2212FA1400389FEB /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9BF82212FA1400389FEB /* Schedule.m */; };
 		9DFB9C022212FB9B00389FEB /* EventsDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9C012212FB9B00389FEB /* EventsDAOTests.m */; };
 		9DFB9C042212FB9B00389FEB /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB9BA72212F1F200389FEB /* PersistenceLayer.framework */; };
-		9DFB9C0C2212FD2800389FEB /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9C0A2212FD2800389FEB /* BaseDAO.h */; };
+		9DFB9C0C2212FD2800389FEB /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9C0A2212FD2800389FEB /* BaseDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DFB9C0D2212FD2800389FEB /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9C0B2212FD2800389FEB /* BaseDAO.m */; };
-		9DFB9C102212FDF100389FEB /* DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9C0E2212FDF100389FEB /* DBHelper.h */; };
+		9DFB9C102212FDF100389FEB /* DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9C0E2212FDF100389FEB /* DBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DFB9C112212FDF100389FEB /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9C0F2212FDF100389FEB /* DBHelper.m */; };
 /* End PBXBuildFile section */
 
@@ -203,12 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFB9BAC2212F1F200389FEB /* PersistenceLayer.h in Headers */,
-				9DFB9C102212FDF100389FEB /* DBHelper.h in Headers */,
-				9DFB9BF52212F7FD00389FEB /* Events.h in Headers */,
-				9DFB9C0C2212FD2800389FEB /* BaseDAO.h in Headers */,
-				9D9A8C42221401E8003F60B7 /* ScheduleDAO.h in Headers */,
-				9DFB9BF92212FA1400389FEB /* Schedule.h in Headers */,
 				9D9A8C2F221393F9003F60B7 /* EventsDAO.h in Headers */,
+				9DFB9BF92212FA1400389FEB /* Schedule.h in Headers */,
+				9DFB9BF52212F7FD00389FEB /* Events.h in Headers */,
+				9D9A8C42221401E8003F60B7 /* ScheduleDAO.h in Headers */,
+				9DFB9C102212FDF100389FEB /* DBHelper.h in Headers */,
+				9DFB9C0C2212FD2800389FEB /* BaseDAO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
