@@ -33,6 +33,7 @@ static ScheduleDAO *sharedSingleton = nil;
             sqlite3_bind_text(statement, 2, [model.gameTime UTF8String], -1, nil);
             sqlite3_bind_text(statement, 3, [model.gameInfo UTF8String], -1, nil);
             sqlite3_bind_int(statement, 4, model.event.EventID);
+            NSLog(@"idzhi:%d", model.event.EventID);
             // 执行插入
             if (sqlite3_step(statement) != SQLITE_DONE) {
                 sqlite3_finalize(statement);
@@ -43,17 +44,17 @@ static ScheduleDAO *sharedSingleton = nil;
         sqlite3_finalize(statement);
         sqlite3_close(db);
     }
-    NSLog(@"总数为：%ld", [[self findAll] count]);
+//    NSLog(@"总数为：%ld", [[self findAll] count]);
     return 0;
 }
 
-// 删除Events方法
+// 删除Schedule方法
 - (int)remove:(Schedule *)model {
     if ([self openDB]) {
         NSString *sql = @"DELETE FROM Schedule WHERE scheduleID = ?";
         sqlite3_stmt *statement;
         if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil) == SQLITE_OK) {
-            sqlite3_bind_int(statement, 1, model.event.EventID);
+            sqlite3_bind_int(statement, 1, model.scheduleID);
             if (sqlite3_step(statement) != SQLITE_DONE) {
                 NSLog(@"数据删除失败");
             }
@@ -64,7 +65,7 @@ static ScheduleDAO *sharedSingleton = nil;
     return 0;
 }
 
-// 修改Events方法
+// 修改Schedule方法
 - (int)modify:(Schedule *)model {
     if ([self openDB]) {
         NSString *sql = @"UPDATE Schedule SET GameDate = ?, GameTime = ?, GameInfo = ?, EventID = ? WHERE ScheduleID = ?";
@@ -91,6 +92,7 @@ static ScheduleDAO *sharedSingleton = nil;
         NSMutableArray *listData = [[NSMutableArray alloc] init];
         NSString *sql = @"SELECT ScheduleID, GameDate, GameTime, GameInfo, EventID FROM Schedule";
         sqlite3_stmt *statement;
+        int i = 0;
         if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil) == SQLITE_OK) {
             while (sqlite3_step(statement) == SQLITE_ROW) {
                 Schedule *schedule = [[Schedule alloc] init];
@@ -104,7 +106,7 @@ static ScheduleDAO *sharedSingleton = nil;
                 Events *event = [[Events alloc] init];
                 event.EventID = sqlite3_column_int(statement, 4);
                 schedule.event = event;
-//                NSLog(@"schedule数据：%@", schedule);
+//                NSLog(@"schedule数据：%@-%d", schedule, i++);
                 [listData addObject:schedule];
             }
             sqlite3_finalize(statement);

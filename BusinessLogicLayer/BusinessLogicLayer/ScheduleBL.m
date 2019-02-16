@@ -2,7 +2,7 @@
 //  ScheduleBL.m
 //  BusinessLogicLayer
 //
-//  Created by 李超 on 2019/2/15.
+//  Created by lee on 2019/2/15.
 //  Copyright © 2019 lee. All rights reserved.
 //
 
@@ -13,6 +13,7 @@
 - (NSMutableDictionary *)readData {
     ScheduleDAO *scheduleDao = [ScheduleDAO sharedInstance];
     NSMutableArray *schedules = [scheduleDao findAll];
+    NSLog(@"第一个总数：%ld", schedules.count);
     NSMutableDictionary *resDict = [[NSMutableDictionary alloc] init];
     EventsDAO *eventsDao = [EventsDAO sharedInstance];
     // 延迟加载Events数据

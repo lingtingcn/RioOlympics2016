@@ -2,7 +2,7 @@
 //  ScheduleBLTests.m
 //  ScheduleBLTests
 //
-//  Created by 李超 on 2019/2/15.
+//  Created by lee on 2019/2/15.
 //  Copyright © 2019 lee. All rights reserved.
 //
 
@@ -25,34 +25,43 @@
     self.theSchedule.gameDate = @"test GameDate";
     self.theSchedule.gameTime = @"test GameTime";
     self.theSchedule.gameInfo = @"test GameInfo";
-    Events *event = [Events new];
+    Events *event = [[Events alloc] init];
     event.EventName = @"Cycling Mountain Bike";
-    event.EventID = 10;
+    event.EventID = 42;
     self.theSchedule.event = event;
+    /*
     // 插入数据测试
     ScheduleDAO *dao = [ScheduleDAO sharedInstance];
     [dao create:self.theSchedule];
+    */
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     // 删除测试数据
-    self.theSchedule.scheduleID = 502;
+    /*
+    self.theSchedule.scheduleID = 504;
     ScheduleDAO *dao = [ScheduleDAO sharedInstance];
     [dao remove:self.theSchedule];
+     */
     self.bl = nil;
+     
     [super tearDown];
 }
 
 // 测试按照主键查询数据的方法
 - (void)testFindAll {
     NSMutableDictionary *dict = [self.bl readData];
+//    NSLog(@"字典数据：%@", dict[@"test GameDate"]);
     NSArray *allKey = [dict allKeys];
     // 断言查询记录数为18
     XCTAssertEqual(allKey.count, 18);
     NSArray *schedules = dict[self.theSchedule.gameDate];
-    NSLog(@"字典数据：%@", schedules[0]);
+    
+    NSLog(@"第二个总数：%ld", schedules.count);
     Schedule *resSchedule = schedules[0];
+    Events *event = [[Events alloc] init];
+    event = resSchedule.event;
     // 断言
     XCTAssertEqualObjects(self.theSchedule.gameDate, resSchedule.gameDate);
     XCTAssertEqualObjects(self.theSchedule.gameTime, resSchedule.gameTime);

@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9D1B6E922216416A002EF17D /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6E912216416A002EF17D /* ScheduleBLTests.m */; };
 		9D1B6E942216416A002EF17D /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB9BBC2212F2FB00389FEB /* BusinessLogicLayer.framework */; };
-		9D1B6E9C2216440C002EF17D /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1B6E9A2216440C002EF17D /* ScheduleBL.h */; };
+		9D1B6E9C2216440C002EF17D /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1B6E9A2216440C002EF17D /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D1B6E9D2216440C002EF17D /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6E9B2216440C002EF17D /* ScheduleBL.m */; };
 		9D24FCF5221530E8008A748C /* EventsBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24FCF4221530E8008A748C /* EventsBLTests.m */; };
 		9D24FCF7221530E8008A748C /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB9BBC2212F2FB00389FEB /* BusinessLogicLayer.framework */; };
-		9D24FCFF22153105008A748C /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D24FCFD22153105008A748C /* EventsBL.h */; };
+		9D24FCFF22153105008A748C /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D24FCFD22153105008A748C /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D24FD0022153105008A748C /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24FCFE22153105008A748C /* EventsBL.m */; };
 		9D24FD0522153D71008A748C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24FD0422153D71008A748C /* PersistenceLayer.framework */; };
 		9DFB9BC12212F2FB00389FEB /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFB9BBF2212F2FB00389FEB /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };

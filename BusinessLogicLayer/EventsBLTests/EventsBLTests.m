@@ -2,7 +2,7 @@
 //  EventsBLTests.m
 //  EventsBLTests
 //
-//  Created by 李超 on 2019/2/14.
+//  Created by lee on 2019/2/14.
 //  Copyright © 2019 lee. All rights reserved.
 //
 
@@ -26,27 +26,31 @@
     self.theEvents.KeyInfo = @"test KeyInfo";
     self.theEvents.BasicsInfo = @"test BasicsInfo";
     self.theEvents.OlympicInfo = @"test OlympicInfo";
+    /*
     // 插入数据测试
     EventsDAO *dao = [EventsDAO sharedInstance];
     [dao create:self.theEvents];
+     */
 }
 
 
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+    /*
     // 删除测试数据
-    self.theEvents.EventID = 41;
+    self.theEvents.EventID = 42;
     EventsDAO *dao = [EventsDAO sharedInstance];
     [dao remove:self.theEvents];
+     */
     self.bl = nil;
 }
 
 // 测试按照主键查询数据的方法
 - (void)testFindAll {
     NSArray *list = [self.bl readData];
-    // 断言查询记录数为42
-    XCTAssertEqual(list.count, 42);
+    // 断言查询记录数为41
+    XCTAssertEqual(list.count, 41);
     Events *resEvent = list[40];
     // 断言
     XCTAssertEqualObjects(self.theEvents.EventName, resEvent.EventName, @"比赛项目名测试失败");

@@ -151,7 +151,8 @@ static EventsDAO *sharedSingleton = nil;
 // 根据id进行查询
 - (Events *)findById:(Events *)event {
     if ([self openDB]) {
-        NSString *sql = [NSString stringWithFormat:@"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo FROM Events WHERE EventID = %d", event.EventID];
+//        NSLog(@"ID值3:%d", event.EventID);
+        NSString *sql = [NSString stringWithFormat:@"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events WHERE EventID = %d", event.EventID];
         sqlite3_stmt *statement;
         // 预处理过程
         if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil) == SQLITE_OK) {

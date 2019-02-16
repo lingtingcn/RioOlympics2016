@@ -105,7 +105,7 @@
 
 // 测试删除方法
 - (void)test_5_Remove {
-    self.theEvents.EventID = 41;
+    self.theEvents.EventID = 42;
     int res = [self.dao remove:self.theEvents];
     // 断言无异常，返回值为0
     XCTAssertEqual(res, 0);

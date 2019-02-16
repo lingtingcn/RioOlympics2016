@@ -7,8 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1B6EA02216E5A1002EF17D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6E9F2216E5A1002EF17D /* HomeViewController.m */; };
+		9D1B6EA62216E8F9002EF17D /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6EA52216E8F9002EF17D /* EventsViewController.m */; };
+		9D1B6EA92216E922002EF17D /* EventsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6EA82216E922002EF17D /* EventsViewCell.m */; };
+		9D1B6EAC2216E9B2002EF17D /* EventsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6EAB2216E9B2002EF17D /* EventsDetailController.m */; };
+		9D1B6EAF2216EB43002EF17D /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1B6EAE2216EB43002EF17D /* BusinessLogicLayer.framework */; };
+		9D1B6EB12216EB47002EF17D /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1B6EB02216EB47002EF17D /* PersistenceLayer.framework */; };
+		9D1B6EDD2216F474002EF17D /* athletics.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB32216F474002EF17D /* athletics.gif */; };
+		9D1B6EDE2216F474002EF17D /* gymnastics-rhythmic.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB42216F474002EF17D /* gymnastics-rhythmic.gif */; };
+		9D1B6EDF2216F474002EF17D /* hockey.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB52216F474002EF17D /* hockey.gif */; };
+		9D1B6EE02216F474002EF17D /* cycling-track.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB62216F474002EF17D /* cycling-track.gif */; };
+		9D1B6EE12216F474002EF17D /* wrestling.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB72216F474002EF17D /* wrestling.gif */; };
+		9D1B6EE22216F474002EF17D /* archery.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB82216F474002EF17D /* archery.gif */; };
+		9D1B6EE32216F474002EF17D /* swimming.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EB92216F474002EF17D /* swimming.gif */; };
+		9D1B6EE42216F474002EF17D /* cycling-road.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBA2216F474002EF17D /* cycling-road.gif */; };
+		9D1B6EE52216F474002EF17D /* boxing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBB2216F474002EF17D /* boxing.gif */; };
+		9D1B6EE62216F474002EF17D /* equestrian-jumping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBC2216F474002EF17D /* equestrian-jumping.gif */; };
+		9D1B6EE72216F474002EF17D /* taekwondo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBD2216F474002EF17D /* taekwondo.gif */; };
+		9D1B6EE82216F474002EF17D /* table-tennis.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBE2216F474002EF17D /* table-tennis.gif */; };
+		9D1B6EE92216F474002EF17D /* football.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EBF2216F474002EF17D /* football.gif */; };
+		9D1B6EEA2216F474002EF17D /* gaoerfu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC02216F474002EF17D /* gaoerfu.gif */; };
+		9D1B6EEB2216F474002EF17D /* basketball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC12216F474002EF17D /* basketball.gif */; };
+		9D1B6EEC2216F474002EF17D /* equestrian-eventing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC22216F474002EF17D /* equestrian-eventing.gif */; };
+		9D1B6EED2216F474002EF17D /* rowing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC32216F474002EF17D /* rowing.gif */; };
+		9D1B6EEE2216F474002EF17D /* synchronised-swimming.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC42216F474002EF17D /* synchronised-swimming.gif */; };
+		9D1B6EEF2216F474002EF17D /* golf.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC52216F474002EF17D /* golf.gif */; };
+		9D1B6EF02216F474002EF17D /* gymnastics-artistic.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC62216F474002EF17D /* gymnastics-artistic.gif */; };
+		9D1B6EF12216F474002EF17D /* ganlanqiu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC72216F474002EF17D /* ganlanqiu.gif */; };
+		9D1B6EF22216F474002EF17D /* gymnastics-trampoline.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC82216F474002EF17D /* gymnastics-trampoline.gif */; };
+		9D1B6EF32216F474002EF17D /* fencing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EC92216F474002EF17D /* fencing.gif */; };
+		9D1B6EF42216F474002EF17D /* cycling-bmx.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECA2216F474002EF17D /* cycling-bmx.gif */; };
+		9D1B6EF52216F474002EF17D /* cycling-mountain-bike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECB2216F474002EF17D /* cycling-mountain-bike.gif */; };
+		9D1B6EF62216F474002EF17D /* weightlifting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECC2216F474002EF17D /* weightlifting.gif */; };
+		9D1B6EF72216F474002EF17D /* volleyball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECD2216F474002EF17D /* volleyball.gif */; };
+		9D1B6EF82216F474002EF17D /* triathlon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECE2216F474002EF17D /* triathlon.gif */; };
+		9D1B6EF92216F474002EF17D /* sailing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ECF2216F474002EF17D /* sailing.gif */; };
+		9D1B6EFA2216F474002EF17D /* modern-pentathlon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED02216F474002EF17D /* modern-pentathlon.gif */; };
+		9D1B6EFB2216F474002EF17D /* canoe-sprint.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED12216F474002EF17D /* canoe-sprint.gif */; };
+		9D1B6EFC2216F474002EF17D /* rugby.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED22216F474002EF17D /* rugby.gif */; };
+		9D1B6EFD2216F474002EF17D /* beach-volleyball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED32216F474002EF17D /* beach-volleyball.gif */; };
+		9D1B6EFE2216F474002EF17D /* equestrian-dressage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED42216F474002EF17D /* equestrian-dressage.gif */; };
+		9D1B6EFF2216F474002EF17D /* water-polo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED52216F474002EF17D /* water-polo.gif */; };
+		9D1B6F002216F474002EF17D /* badminton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED62216F474002EF17D /* badminton.gif */; };
+		9D1B6F012216F474002EF17D /* judo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED72216F474002EF17D /* judo.gif */; };
+		9D1B6F022216F474002EF17D /* handball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED82216F474002EF17D /* handball.gif */; };
+		9D1B6F032216F474002EF17D /* diving.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6ED92216F474002EF17D /* diving.gif */; };
+		9D1B6F042216F474002EF17D /* canoe-slalom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EDA2216F474002EF17D /* canoe-slalom.gif */; };
+		9D1B6F052216F474002EF17D /* shooting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EDB2216F474002EF17D /* shooting.gif */; };
+		9D1B6F062216F474002EF17D /* tennis.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B6EDC2216F474002EF17D /* tennis.gif */; };
+		9D1B6F092216FFAC002EF17D /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6F082216FFAC002EF17D /* ScheduleViewController.m */; };
+		9D1B6F0C221703DF002EF17D /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6F0B221703DF002EF17D /* CountDownViewController.m */; };
+		9D1B6F0F221707EB002EF17D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B6F0E221707EB002EF17D /* AboutViewController.m */; };
 		9DFB9BD52212F32B00389FEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9BD42212F32B00389FEB /* AppDelegate.m */; };
-		9DFB9BD82212F32B00389FEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9BD72212F32B00389FEB /* ViewController.m */; };
 		9DFB9BDB2212F32B00389FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB9BD92212F32B00389FEB /* Main.storyboard */; };
 		9DFB9BDD2212F32C00389FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB9BDC2212F32C00389FEB /* Assets.xcassets */; };
 		9DFB9BE02212F32C00389FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB9BDE2212F32C00389FEB /* LaunchScreen.storyboard */; };
@@ -16,11 +66,67 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1B6E9E2216E5A1002EF17D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9D1B6E9F2216E5A1002EF17D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9D1B6EA42216E8F9002EF17D /* EventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		9D1B6EA52216E8F9002EF17D /* EventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		9D1B6EA72216E922002EF17D /* EventsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewCell.h; sourceTree = "<group>"; };
+		9D1B6EA82216E922002EF17D /* EventsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewCell.m; sourceTree = "<group>"; };
+		9D1B6EAA2216E9B2002EF17D /* EventsDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsDetailController.h; sourceTree = "<group>"; };
+		9D1B6EAB2216E9B2002EF17D /* EventsDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsDetailController.m; sourceTree = "<group>"; };
+		9D1B6EAE2216EB43002EF17D /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1B6EB02216EB47002EF17D /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1B6EB32216F474002EF17D /* athletics.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = athletics.gif; sourceTree = "<group>"; };
+		9D1B6EB42216F474002EF17D /* gymnastics-rhythmic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gymnastics-rhythmic.gif"; sourceTree = "<group>"; };
+		9D1B6EB52216F474002EF17D /* hockey.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hockey.gif; sourceTree = "<group>"; };
+		9D1B6EB62216F474002EF17D /* cycling-track.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cycling-track.gif"; sourceTree = "<group>"; };
+		9D1B6EB72216F474002EF17D /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wrestling.gif; sourceTree = "<group>"; };
+		9D1B6EB82216F474002EF17D /* archery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = archery.gif; sourceTree = "<group>"; };
+		9D1B6EB92216F474002EF17D /* swimming.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swimming.gif; sourceTree = "<group>"; };
+		9D1B6EBA2216F474002EF17D /* cycling-road.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cycling-road.gif"; sourceTree = "<group>"; };
+		9D1B6EBB2216F474002EF17D /* boxing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = boxing.gif; sourceTree = "<group>"; };
+		9D1B6EBC2216F474002EF17D /* equestrian-jumping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "equestrian-jumping.gif"; sourceTree = "<group>"; };
+		9D1B6EBD2216F474002EF17D /* taekwondo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = taekwondo.gif; sourceTree = "<group>"; };
+		9D1B6EBE2216F474002EF17D /* table-tennis.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "table-tennis.gif"; sourceTree = "<group>"; };
+		9D1B6EBF2216F474002EF17D /* football.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = football.gif; sourceTree = "<group>"; };
+		9D1B6EC02216F474002EF17D /* gaoerfu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaoerfu.gif; sourceTree = "<group>"; };
+		9D1B6EC12216F474002EF17D /* basketball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = basketball.gif; sourceTree = "<group>"; };
+		9D1B6EC22216F474002EF17D /* equestrian-eventing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "equestrian-eventing.gif"; sourceTree = "<group>"; };
+		9D1B6EC32216F474002EF17D /* rowing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rowing.gif; sourceTree = "<group>"; };
+		9D1B6EC42216F474002EF17D /* synchronised-swimming.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "synchronised-swimming.gif"; sourceTree = "<group>"; };
+		9D1B6EC52216F474002EF17D /* golf.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = golf.gif; sourceTree = "<group>"; };
+		9D1B6EC62216F474002EF17D /* gymnastics-artistic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gymnastics-artistic.gif"; sourceTree = "<group>"; };
+		9D1B6EC72216F474002EF17D /* ganlanqiu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ganlanqiu.gif; sourceTree = "<group>"; };
+		9D1B6EC82216F474002EF17D /* gymnastics-trampoline.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gymnastics-trampoline.gif"; sourceTree = "<group>"; };
+		9D1B6EC92216F474002EF17D /* fencing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fencing.gif; sourceTree = "<group>"; };
+		9D1B6ECA2216F474002EF17D /* cycling-bmx.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cycling-bmx.gif"; sourceTree = "<group>"; };
+		9D1B6ECB2216F474002EF17D /* cycling-mountain-bike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cycling-mountain-bike.gif"; sourceTree = "<group>"; };
+		9D1B6ECC2216F474002EF17D /* weightlifting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = weightlifting.gif; sourceTree = "<group>"; };
+		9D1B6ECD2216F474002EF17D /* volleyball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = volleyball.gif; sourceTree = "<group>"; };
+		9D1B6ECE2216F474002EF17D /* triathlon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = triathlon.gif; sourceTree = "<group>"; };
+		9D1B6ECF2216F474002EF17D /* sailing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sailing.gif; sourceTree = "<group>"; };
+		9D1B6ED02216F474002EF17D /* modern-pentathlon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "modern-pentathlon.gif"; sourceTree = "<group>"; };
+		9D1B6ED12216F474002EF17D /* canoe-sprint.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "canoe-sprint.gif"; sourceTree = "<group>"; };
+		9D1B6ED22216F474002EF17D /* rugby.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rugby.gif; sourceTree = "<group>"; };
+		9D1B6ED32216F474002EF17D /* beach-volleyball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "beach-volleyball.gif"; sourceTree = "<group>"; };
+		9D1B6ED42216F474002EF17D /* equestrian-dressage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "equestrian-dressage.gif"; sourceTree = "<group>"; };
+		9D1B6ED52216F474002EF17D /* water-polo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "water-polo.gif"; sourceTree = "<group>"; };
+		9D1B6ED62216F474002EF17D /* badminton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = badminton.gif; sourceTree = "<group>"; };
+		9D1B6ED72216F474002EF17D /* judo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = judo.gif; sourceTree = "<group>"; };
+		9D1B6ED82216F474002EF17D /* handball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = handball.gif; sourceTree = "<group>"; };
+		9D1B6ED92216F474002EF17D /* diving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diving.gif; sourceTree = "<group>"; };
+		9D1B6EDA2216F474002EF17D /* canoe-slalom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "canoe-slalom.gif"; sourceTree = "<group>"; };
+		9D1B6EDB2216F474002EF17D /* shooting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shooting.gif; sourceTree = "<group>"; };
+		9D1B6EDC2216F474002EF17D /* tennis.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tennis.gif; sourceTree = "<group>"; };
+		9D1B6F072216FFAC002EF17D /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		9D1B6F082216FFAC002EF17D /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		9D1B6F0A221703DF002EF17D /* CountDownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		9D1B6F0B221703DF002EF17D /* CountDownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		9D1B6F0D221707EB002EF17D /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9D1B6F0E221707EB002EF17D /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		9DFB9BD02212F32B00389FEB /* RioOlympics2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RioOlympics2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFB9BD32212F32B00389FEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DFB9BD42212F32B00389FEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DFB9BD62212F32B00389FEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DFB9BD72212F32B00389FEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9DFB9BDA2212F32B00389FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DFB9BDC2212F32C00389FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DFB9BDF2212F32C00389FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,17 +139,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1B6EB12216EB47002EF17D /* PersistenceLayer.framework in Frameworks */,
+				9D1B6EAF2216EB43002EF17D /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D1B6EAD2216EB43002EF17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D1B6EB02216EB47002EF17D /* PersistenceLayer.framework */,
+				9D1B6EAE2216EB43002EF17D /* BusinessLogicLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D1B6EB22216F474002EF17D /* events */ = {
+			isa = PBXGroup;
+			children = (
+				9D1B6EB32216F474002EF17D /* athletics.gif */,
+				9D1B6EB42216F474002EF17D /* gymnastics-rhythmic.gif */,
+				9D1B6EB52216F474002EF17D /* hockey.gif */,
+				9D1B6EB62216F474002EF17D /* cycling-track.gif */,
+				9D1B6EB72216F474002EF17D /* wrestling.gif */,
+				9D1B6EB82216F474002EF17D /* archery.gif */,
+				9D1B6EB92216F474002EF17D /* swimming.gif */,
+				9D1B6EBA2216F474002EF17D /* cycling-road.gif */,
+				9D1B6EBB2216F474002EF17D /* boxing.gif */,
+				9D1B6EBC2216F474002EF17D /* equestrian-jumping.gif */,
+				9D1B6EBD2216F474002EF17D /* taekwondo.gif */,
+				9D1B6EBE2216F474002EF17D /* table-tennis.gif */,
+				9D1B6EBF2216F474002EF17D /* football.gif */,
+				9D1B6EC02216F474002EF17D /* gaoerfu.gif */,
+				9D1B6EC12216F474002EF17D /* basketball.gif */,
+				9D1B6EC22216F474002EF17D /* equestrian-eventing.gif */,
+				9D1B6EC32216F474002EF17D /* rowing.gif */,
+				9D1B6EC42216F474002EF17D /* synchronised-swimming.gif */,
+				9D1B6EC52216F474002EF17D /* golf.gif */,
+				9D1B6EC62216F474002EF17D /* gymnastics-artistic.gif */,
+				9D1B6EC72216F474002EF17D /* ganlanqiu.gif */,
+				9D1B6EC82216F474002EF17D /* gymnastics-trampoline.gif */,
+				9D1B6EC92216F474002EF17D /* fencing.gif */,
+				9D1B6ECA2216F474002EF17D /* cycling-bmx.gif */,
+				9D1B6ECB2216F474002EF17D /* cycling-mountain-bike.gif */,
+				9D1B6ECC2216F474002EF17D /* weightlifting.gif */,
+				9D1B6ECD2216F474002EF17D /* volleyball.gif */,
+				9D1B6ECE2216F474002EF17D /* triathlon.gif */,
+				9D1B6ECF2216F474002EF17D /* sailing.gif */,
+				9D1B6ED02216F474002EF17D /* modern-pentathlon.gif */,
+				9D1B6ED12216F474002EF17D /* canoe-sprint.gif */,
+				9D1B6ED22216F474002EF17D /* rugby.gif */,
+				9D1B6ED32216F474002EF17D /* beach-volleyball.gif */,
+				9D1B6ED42216F474002EF17D /* equestrian-dressage.gif */,
+				9D1B6ED52216F474002EF17D /* water-polo.gif */,
+				9D1B6ED62216F474002EF17D /* badminton.gif */,
+				9D1B6ED72216F474002EF17D /* judo.gif */,
+				9D1B6ED82216F474002EF17D /* handball.gif */,
+				9D1B6ED92216F474002EF17D /* diving.gif */,
+				9D1B6EDA2216F474002EF17D /* canoe-slalom.gif */,
+				9D1B6EDB2216F474002EF17D /* shooting.gif */,
+				9D1B6EDC2216F474002EF17D /* tennis.gif */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
 		9DFB9BC72212F32B00389FEB = {
 			isa = PBXGroup;
 			children = (
 				9DFB9BD22212F32B00389FEB /* RioOlympics2016 */,
 				9DFB9BD12212F32B00389FEB /* Products */,
+				9D1B6EAD2216EB43002EF17D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +227,21 @@
 			children = (
 				9DFB9BD32212F32B00389FEB /* AppDelegate.h */,
 				9DFB9BD42212F32B00389FEB /* AppDelegate.m */,
-				9DFB9BD62212F32B00389FEB /* ViewController.h */,
-				9DFB9BD72212F32B00389FEB /* ViewController.m */,
+				9D1B6E9E2216E5A1002EF17D /* HomeViewController.h */,
+				9D1B6E9F2216E5A1002EF17D /* HomeViewController.m */,
+				9D1B6EA42216E8F9002EF17D /* EventsViewController.h */,
+				9D1B6EA52216E8F9002EF17D /* EventsViewController.m */,
+				9D1B6EA72216E922002EF17D /* EventsViewCell.h */,
+				9D1B6EA82216E922002EF17D /* EventsViewCell.m */,
+				9D1B6EAA2216E9B2002EF17D /* EventsDetailController.h */,
+				9D1B6EAB2216E9B2002EF17D /* EventsDetailController.m */,
+				9D1B6F072216FFAC002EF17D /* ScheduleViewController.h */,
+				9D1B6F082216FFAC002EF17D /* ScheduleViewController.m */,
+				9D1B6F0A221703DF002EF17D /* CountDownViewController.h */,
+				9D1B6F0B221703DF002EF17D /* CountDownViewController.m */,
+				9D1B6F0D221707EB002EF17D /* AboutViewController.h */,
+				9D1B6F0E221707EB002EF17D /* AboutViewController.m */,
+				9D1B6EB22216F474002EF17D /* events */,
 				9DFB9BD92212F32B00389FEB /* Main.storyboard */,
 				9DFB9BDC2212F32C00389FEB /* Assets.xcassets */,
 				9DFB9BDE2212F32C00389FEB /* LaunchScreen.storyboard */,
@@ -128,9 +308,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1B6F022216F474002EF17D /* handball.gif in Resources */,
+				9D1B6EED2216F474002EF17D /* rowing.gif in Resources */,
+				9D1B6EE12216F474002EF17D /* wrestling.gif in Resources */,
+				9D1B6EE62216F474002EF17D /* equestrian-jumping.gif in Resources */,
 				9DFB9BE02212F32C00389FEB /* LaunchScreen.storyboard in Resources */,
+				9D1B6EF22216F474002EF17D /* gymnastics-trampoline.gif in Resources */,
+				9D1B6EE92216F474002EF17D /* football.gif in Resources */,
+				9D1B6F052216F474002EF17D /* shooting.gif in Resources */,
+				9D1B6EF62216F474002EF17D /* weightlifting.gif in Resources */,
+				9D1B6EFB2216F474002EF17D /* canoe-sprint.gif in Resources */,
+				9D1B6EFE2216F474002EF17D /* equestrian-dressage.gif in Resources */,
+				9D1B6F002216F474002EF17D /* badminton.gif in Resources */,
+				9D1B6EF42216F474002EF17D /* cycling-bmx.gif in Resources */,
+				9D1B6EF72216F474002EF17D /* volleyball.gif in Resources */,
+				9D1B6EEE2216F474002EF17D /* synchronised-swimming.gif in Resources */,
+				9D1B6EEF2216F474002EF17D /* golf.gif in Resources */,
+				9D1B6F032216F474002EF17D /* diving.gif in Resources */,
+				9D1B6EE22216F474002EF17D /* archery.gif in Resources */,
+				9D1B6EEA2216F474002EF17D /* gaoerfu.gif in Resources */,
+				9D1B6EFD2216F474002EF17D /* beach-volleyball.gif in Resources */,
+				9D1B6EFC2216F474002EF17D /* rugby.gif in Resources */,
+				9D1B6EF12216F474002EF17D /* ganlanqiu.gif in Resources */,
 				9DFB9BDD2212F32C00389FEB /* Assets.xcassets in Resources */,
+				9D1B6EE02216F474002EF17D /* cycling-track.gif in Resources */,
+				9D1B6F042216F474002EF17D /* canoe-slalom.gif in Resources */,
+				9D1B6EE52216F474002EF17D /* boxing.gif in Resources */,
+				9D1B6F012216F474002EF17D /* judo.gif in Resources */,
+				9D1B6EF02216F474002EF17D /* gymnastics-artistic.gif in Resources */,
+				9D1B6EDE2216F474002EF17D /* gymnastics-rhythmic.gif in Resources */,
+				9D1B6EDD2216F474002EF17D /* athletics.gif in Resources */,
 				9DFB9BDB2212F32B00389FEB /* Main.storyboard in Resources */,
+				9D1B6EEC2216F474002EF17D /* equestrian-eventing.gif in Resources */,
+				9D1B6EF92216F474002EF17D /* sailing.gif in Resources */,
+				9D1B6F062216F474002EF17D /* tennis.gif in Resources */,
+				9D1B6EDF2216F474002EF17D /* hockey.gif in Resources */,
+				9D1B6EE72216F474002EF17D /* taekwondo.gif in Resources */,
+				9D1B6EF52216F474002EF17D /* cycling-mountain-bike.gif in Resources */,
+				9D1B6EE42216F474002EF17D /* cycling-road.gif in Resources */,
+				9D1B6EFA2216F474002EF17D /* modern-pentathlon.gif in Resources */,
+				9D1B6EEB2216F474002EF17D /* basketball.gif in Resources */,
+				9D1B6EF82216F474002EF17D /* triathlon.gif in Resources */,
+				9D1B6EE82216F474002EF17D /* table-tennis.gif in Resources */,
+				9D1B6EE32216F474002EF17D /* swimming.gif in Resources */,
+				9D1B6EFF2216F474002EF17D /* water-polo.gif in Resources */,
+				9D1B6EF32216F474002EF17D /* fencing.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFB9BD82212F32B00389FEB /* ViewController.m in Sources */,
+				9D1B6F0F221707EB002EF17D /* AboutViewController.m in Sources */,
+				9D1B6EAC2216E9B2002EF17D /* EventsDetailController.m in Sources */,
+				9D1B6EA62216E8F9002EF17D /* EventsViewController.m in Sources */,
 				9DFB9BE32212F32C00389FEB /* main.m in Sources */,
 				9DFB9BD52212F32B00389FEB /* AppDelegate.m in Sources */,
+				9D1B6F0C221703DF002EF17D /* CountDownViewController.m in Sources */,
+				9D1B6EA02216E5A1002EF17D /* HomeViewController.m in Sources */,
+				9D1B6F092216FFAC002EF17D /* ScheduleViewController.m in Sources */,
+				9D1B6EA92216E922002EF17D /* EventsViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
