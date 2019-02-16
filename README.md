@@ -1,2 +1,2 @@
 # RioOlympics2016
-本项目参照《iOS开发指南》第4版第28章而写，由于水平有限，项目代码并非完美，存在诸多不足，请批评指正。
+This project  write by reference to book 《iOS develop guide》, fouth edition, chapter twenty-eight, due to a limit technology, project codes will not perfect, had a lot of bad, please accuse and criticize, help the project be perfect, Thanks.
